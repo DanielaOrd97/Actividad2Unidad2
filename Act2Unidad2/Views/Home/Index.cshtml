@@ -1,6 +1,6 @@
-﻿
+﻿@model IEnumerable<Act2Unidad2.Models.ViewModels.RazasViewModel>;
 @{
-    ViewData["Title"] = "Index";
+    Layout = "MainLayout";
 }
 
     <section class="nav">
@@ -38,12 +38,14 @@
     </section>
     <section class="list">
         <ul>
+            @foreach (var m in Model)
+        {
             <li>
                 <a href="raza.html">
-                    <img src="imgs_perros/95_0.jpg">
-                    Afgano
+                    <img src="~/imgs_perros/@(m.IdRaza)_0.jpg">
+                    @m.NombreRaza
                 </a>
             </li>
-            
+        }
         </ul>
     </section>
