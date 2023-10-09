@@ -1,0 +1,397 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\estilos.css",
+      "PackagePath": "staticwebassets\\estilos.css"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs\\desktop.ini",
+      "PackagePath": "staticwebassets\\imgs\\desktop.ini"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs\\gallery_prev_next_raza.png",
+      "PackagePath": "staticwebassets\\imgs\\gallery_prev_next_raza.png"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs\\logo.png",
+      "PackagePath": "staticwebassets\\imgs\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs\\main_bg.jpg",
+      "PackagePath": "staticwebassets\\imgs\\main_bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs\\nivel0.png",
+      "PackagePath": "staticwebassets\\imgs\\nivel0.png"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs\\nivel1.png",
+      "PackagePath": "staticwebassets\\imgs\\nivel1.png"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs\\nivel10.png",
+      "PackagePath": "staticwebassets\\imgs\\nivel10.png"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs\\nivel2.png",
+      "PackagePath": "staticwebassets\\imgs\\nivel2.png"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs\\nivel3.png",
+      "PackagePath": "staticwebassets\\imgs\\nivel3.png"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs\\nivel4.png",
+      "PackagePath": "staticwebassets\\imgs\\nivel4.png"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs\\nivel5.png",
+      "PackagePath": "staticwebassets\\imgs\\nivel5.png"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs\\nivel6.png",
+      "PackagePath": "staticwebassets\\imgs\\nivel6.png"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs\\nivel7.png",
+      "PackagePath": "staticwebassets\\imgs\\nivel7.png"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs\\nivel8.png",
+      "PackagePath": "staticwebassets\\imgs\\nivel8.png"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs\\nivel9.png",
+      "PackagePath": "staticwebassets\\imgs\\nivel9.png"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs\\search.png",
+      "PackagePath": "staticwebassets\\imgs\\search.png"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\0_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\0_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\100_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\100_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\101_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\101_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\102_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\102_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\103_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\103_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\104_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\104_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\105_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\105_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\106_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\106_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\108_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\108_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\109_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\109_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\10_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\10_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\110_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\110_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\112_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\112_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\113_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\113_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\114_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\114_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\115_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\115_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\116_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\116_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\117_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\117_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\120_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\120_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\121_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\121_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\122_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\122_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\123_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\123_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\124_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\124_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\126_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\126_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\127_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\127_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\128_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\128_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\129_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\129_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\130_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\130_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\131_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\131_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\132_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\132_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\135_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\135_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\2110_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\2110_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\2391_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\2391_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\2520_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\2520_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\2791_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\2791_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\2906_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\2906_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\3001_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\3001_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\3133_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\3133_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\4500_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\4500_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\4501_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\4501_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\52_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\52_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\53_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\53_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\54_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\54_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\55_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\55_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\57_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\57_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\58_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\58_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\60_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\60_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\61_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\61_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\63_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\63_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\64_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\64_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\66_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\66_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\69_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\69_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\70_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\70_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\71_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\71_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\72_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\72_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\73_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\73_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\75_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\75_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\76_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\76_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\77_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\77_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\78_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\78_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\79_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\79_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\80_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\80_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\81_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\81_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\82_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\82_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\83_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\83_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\84_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\84_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\85_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\85_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\87_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\87_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\88_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\88_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\92_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\92_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\93_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\93_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\94_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\94_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\95_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\95_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\96_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\96_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\97_0.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\97_0.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\NoPhoto.jpg",
+      "PackagePath": "staticwebassets\\imgs_perros\\NoPhoto.jpg"
+    },
+    {
+      "Id": "C:\\Users\\danie\\Documents\\Act2U2\\Act2Unidad2\\wwwroot\\imgs_perros\\desktop.ini",
+      "PackagePath": "staticwebassets\\imgs_perros\\desktop.ini"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Act2Unidad2.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Act2Unidad2.props",
+      "PackagePath": "build\\Act2Unidad2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Act2Unidad2.props",
+      "PackagePath": "buildMultiTargeting\\Act2Unidad2.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Act2Unidad2.props",
+      "PackagePath": "buildTransitive\\Act2Unidad2.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
