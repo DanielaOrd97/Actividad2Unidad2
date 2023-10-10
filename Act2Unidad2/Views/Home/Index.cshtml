@@ -1,16 +1,19 @@
-﻿@model IEnumerable<Act2Unidad2.Models.ViewModels.RazasViewModel>;
+﻿@model IEnumerable<Act2Unidad2.Models.ViewModels.IndexViewModel>;
 @{
     Layout = "MainLayout";
 }
 
+
     <section class="nav">
         <h3>ABC de Razas</h3>
+     
         <nav>
             <a href="index.html">Todas</a>
             <a href="index.html">A</a>
+            <a href="index.html">A</a>
             <a href="index.html">B</a>
             <a href="index.html">C</a>
-            <a href="index.html">D</a>
+           @* <a href="index.html">D</a>
             <a href="index.html">E</a>
             <a href="index.html">F</a>
             <a href="index.html">G</a>
@@ -32,12 +35,13 @@
             <a href="index.html">W</a>
             <a href="index.html">X</a>
             <a href="index.html">Y</a>
-            <a href="index.html">Z</a>
+            <a href="index.html">Z</a>*@
             <a href="pais.html">Listado por país</a>
         </nav>
     </section>
     <section class="list">
         <ul>
+        
             @foreach (var m in Model)
         {
             <li>
