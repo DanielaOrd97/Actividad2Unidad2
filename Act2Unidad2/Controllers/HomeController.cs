@@ -46,7 +46,7 @@ namespace Act2Unidad2.Controllers
                 .Include(x => x.Estadisticasraza).Include(x => x.IdPaisNavigation).FirstOrDefault(x => x.Nombre == NombreRaza);
 
 
-            if(datos == null)
+            if (datos == null)
             {
                 return RedirectToAction("Index");
             }
@@ -79,22 +79,8 @@ namespace Act2Unidad2.Controllers
 
                 return View(vm);
             }
-           
+
         }
-
-
-        //public IActionResult Filtro(char letra)
-        //{
-        //    PerrosContext context = new();
-
-        //    var datos = context.Razas.OrderBy(x => x.Nombre).Where(x => x.Nombre[0] == letra).Select(x => new IndexViewModel
-        //    {
-        //        IdRaza = (int)x.Id,
-        //        NombreRaza = x.Nombre
-        //    });
-
-        //    return View(datos);
-        //}
 
     }
 }
