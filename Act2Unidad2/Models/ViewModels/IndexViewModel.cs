@@ -5,6 +5,7 @@
         //public int IdRaza { get; set; }
         //public string NombreRaza { get; set; } = null!;
         public IEnumerable<RazasModel> ListaRazas { get; set; } = null!;
+        public List<char> Abecedario { get; set; } = null!;
     }
 
     public class RazasModel

@@ -8,10 +8,11 @@
      
         <nav>
             <a href="index.html">Todas</a>
-            <a href="index.html">A</a>
-            <a href="index.html">A</a>
-            <a href="index.html">B</a>
-            <a href="index.html">C</a>
+            @foreach (var letra in Model.Abecedario)
+            {
+                <a href="~/Home/Index/@(letra)">@(letra)</a>
+            }
+            
             <a href="~/Home/Paises">Listado por país</a>
         </nav>
     </section>

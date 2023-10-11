@@ -8,24 +8,86 @@ namespace Act2Unidad2.Controllers
 {
     public class HomeController : Controller
     {
+        //char[] letras;
+        List<char> letras = new();
         public IActionResult Index()
         {
+            //GenerarAbecedario();
+
+            //PerrosContext context = new();
+
+            //var datos = context.Razas.OrderBy(x => x.Nombre);
+
+            //IndexViewModel vm = new();
+
+            //vm.ListaRazas = datos.Select(x => new RazasModel
+            //{
+            //    IdRaza = (int)x.Id,
+            //    NombreRaza = x.Nombre
+            //});
+
+            //return View(vm);
+
+
+            ///////////////////
+            ///
+
+            GenerarAbecedario();
+
             PerrosContext context = new();
 
             var datos = context.Razas.OrderBy(x => x.Nombre);
 
-            IndexViewModel vm = new();
-
-            vm.ListaRazas = datos.Select(x => new RazasModel
+            IndexViewModel vm = new()
             {
-                IdRaza = (int)x.Id,
-                NombreRaza = x.Nombre
-            });
+                Abecedario = letras,
+                ListaRazas = datos.Select(x => new RazasModel
+                {
+                    IdRaza = (int)x.Id,
+                    NombreRaza = x.Nombre
+                })
+            };
+
+            int longitud = vm.ListaRazas.Count();
+            List<char> InicioL = new();
+
+            InicioL.AddRange(vm.ListaRazas.Select(x => x.NombreRaza[0]).Distinct());
+
+            if(InicioL.Count != letras.Count)
+            {
+                vm.Abecedario = InicioL;
+            }
 
             return View(vm);
+
         }
 
+
         //metodo para generar abecedario
+        void GenerarAbecedario()
+        {
+
+            for (char i = 'A'; i <= 'Z'; i++)
+            {
+                letras.Add(i);
+                //letras[contador] = i;
+                //contador++;
+            }
+        }
+        
+
+        //public IActionResult Index(string letra)
+        //{
+        //    PerrosContext context = new();
+
+        //    var datos = context.Razas.Where(x => x.Nombre[0] == letra);
+
+
+
+        //    return View();
+        //}
+
+
 
         [Route("/Home/Detalles/{NombreRaza}")]
         public IActionResult Detalles(string NombreRaza)
@@ -112,6 +174,8 @@ namespace Act2Unidad2.Controllers
             return View(datos);
         }
 
+
+        
 
     }
 }
