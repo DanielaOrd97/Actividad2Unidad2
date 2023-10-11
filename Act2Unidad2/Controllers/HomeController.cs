@@ -39,12 +39,10 @@ namespace Act2Unidad2.Controllers
         public IActionResult Detalles(string NombreRaza)
         {
             NombreRaza = NombreRaza.Replace("-", " ");
-
             PerrosContext context = new();
 
             var datos = context.Razas.Include(x => x.Caracteristicasfisicas)
                 .Include(x => x.Estadisticasraza).Include(x => x.IdPaisNavigation).FirstOrDefault(x => x.Nombre == NombreRaza);
-
 
             if (datos == null)
             {
@@ -77,8 +75,32 @@ namespace Act2Unidad2.Controllers
                     Color = datos.Caracteristicasfisicas.Color
                 };
 
+                /////
+                ///
+                //int[] azar;
+                //void GenerarAzar()
+                //{
+                    
+                //    azar = new int[4];
+                //    Random r = new();
+
+                //    for (int i = 0; i < azar.Length; i++)
+                //    {
+                //        azar[i] = r.Next(51, 4502);
+                //    }
+                //}
+                
+               
+
+
+
                 return View(vm);
+
+
             }
+
+
+
 
         }
 
