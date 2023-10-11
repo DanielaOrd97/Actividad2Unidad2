@@ -7,12 +7,11 @@
         <h3>ABC de Razas</h3>
      
         <nav>
-            <a href="index.html">Todas</a>
+            <a href="~Home/Index">Todas</a>
             @foreach (var letra in Model.Abecedario)
             {
                 <a href="~/Home/Index/@(letra)">@(letra)</a>
             }
-            
             <a href="~/Home/Paises">Listado por país</a>
         </nav>
     </section>
