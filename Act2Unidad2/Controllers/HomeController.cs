@@ -10,13 +10,6 @@ namespace Act2Unidad2.Controllers
     {
         public IActionResult Index()
         {
-            //PerrosContext context = new();
-
-            //    var datos = context.Razas.OrderBy(x => x.Nombre).Select(x => new IndexViewModel
-            //    {
-            //        IdRaza = (int)x.Id,
-            //        NombreRaza = x.Nombre
-            //    });
 
             PerrosContext context = new();
 
@@ -103,6 +96,25 @@ namespace Act2Unidad2.Controllers
 
 
         }
+
+
+        public IActionResult Paises()
+        {
+            PerrosContext context = new();
+
+            var datos = context.Paises.Include(x => x.Razas).OrderBy(x => x.Nombre).Select(x => new PaisesViewModel
+            {
+                NombrePais = x.Nombre,
+                ListaRazasP = x.Razas.Select(x => new RazasModel1
+                {
+                    IdRaza = (int)x.Id,
+                    NombreRaza = x.Nombre
+                })
+            });
+
+            return View(datos);
+        }
+
 
     }
 }

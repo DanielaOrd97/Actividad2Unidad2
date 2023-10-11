@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Act2Unidad2.Models.ViewModels.PaisesViewModel>;
+@{
+    Layout = "MainLayout";
+}
+
+    <section class="nav">
+        <h3>Razas por país</h3>
+        <nav>
+            <a href="index.html">Listado Alfabético de Razas</a>
+        </nav>
+    </section>
+
+    <section class="list">
+       
+     @foreach (var pais in Model)
+    {
+        <h4>@pais.NombrePais</h4>
+        <ul>
+            @foreach (var raza in pais.ListaRazasP)
+            {
+                <li>
+                    <a href="~/Home/Detalles/@(raza.NombreRaza.Replace(" ","-"))">
+                        <img src="~/imgs_perros/@(raza.IdRaza)_0.jpg" />
+                        @raza.NombreRaza
+                    </a>
+                </li>
+            }
+           
+        </ul>
+
+    }
+      
+
+    </section>
+
+
