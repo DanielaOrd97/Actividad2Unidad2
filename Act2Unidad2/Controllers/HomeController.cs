@@ -10,7 +10,6 @@ namespace Act2Unidad2.Controllers
     {
         public IActionResult Index()
         {
-
             PerrosContext context = new();
 
             var datos = context.Razas.OrderBy(x => x.Nombre);
@@ -104,7 +103,7 @@ namespace Act2Unidad2.Controllers
 
             var datos = context.Paises.Include(x => x.Razas).OrderBy(x => x.Nombre).Select(x => new PaisesViewModel
             {
-                NombrePais = x.Nombre,
+                NombrePais = x.Nombre ?? "No disponible",
                 ListaRazasP = x.Razas.Select(x => new RazasModel1
                 {
                     IdRaza = (int)x.Id,
