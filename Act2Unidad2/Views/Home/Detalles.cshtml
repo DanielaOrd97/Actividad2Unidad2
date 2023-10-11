@@ -16,46 +16,46 @@
     <section class="datos">
         <h3>Datos</h3>
         <label>Otros nombres: </label>
-        <span id="otrosNombre">No tiene</span>
+        <span id="otrosNombre">@Model.OtrosNombres</span>
         <br />
         <label>País de Origen: </label>
-        <span id="pais">Afganistán</span>
+        <span id="pais">@Model.PaisDeOrigen</span>
         <br />
         <label>Peso: </label>
-        <span id="peso">23kg. - 27kg.</span>
+        <span id="peso">@Model.PesoMin kg. - @Model.PesoMax kg.</span>
         <br />
         <label>Altura: </label>
-        <span id="altura">68cm. - 74cm.</span>
+        <span id="altura">@Model.AlturaMin cm. - @Model.AlturaMax cm.</span>
         <br />
         <label>Esperanza de Vida: </label>
-        <span id="vida">10 años</span>
+        <span id="vida">@Model.EsperanzaDeVida</span>
         <br />
     </section>
     <section class="estadisticas">
         <h3>Estadísticas</h3>
-        <label>Nivel de Energía:</label><img src="imgs/nivel8.png" /><br />
-        <label>Facilidad de Entrenamiento:</label><img src="imgs/nivel1.png" /><br />
-        <label>Ejercicio Obligatorio:</label><img src="imgs/nivel10.png" /><br />
-        <label>Amistad con Desconocidos:</label><img src="imgs/nivel6.png" /><br />
-        <label>Amistad con Perros:</label><img src="imgs/nivel6.png" /><br />
-        <label>Necesidad de Cepillado:</label><img src="imgs/nivel10.png" />
+        <label>Nivel de Energía:</label><img src="~/imgs/nivel@(Model.NivelEnergia).png" /><br />
+        <label>Facilidad de Entrenamiento:</label><img src="~/imgs/nivel@(Model.Entrenamiento).png" /><br />
+        <label>Ejercicio Obligatorio:</label><img src="~/imgs/nivel@(Model.EjercicioObligatorio).png" /><br />
+        <label>Amistad con Desconocidos:</label><img src="~/imgs/nivel@(Model.AmistadDesconocidos).png" /><br />
+        <label>Amistad con Perros:</label><img src="~/imgs/nivel@(Model.AmistadPerros).png" /><br />
+        <label>Necesidad de Cepillado:</label><img src="~/imgs/nivel@(Model.Cepillado).png" />
     </section>
     <section class="fisicas">
         <h3>Caracteristicas Físicas</h3>
         <label>Patas: </label>
-        <span id="patas"> largas y musculosas</span>
+        <span id="patas">@Model.Patas</span>
         <br />
         <label>Cola: </label>
-        <span id="cola"> termina en forma de anillo con pocos pelos</span>
+        <span id="cola"> @Model.Cola</span>
         <br />
         <label>Hocico: </label>
-        <span id="hocico"> largo</span>
+        <span id="hocico"> @Model.Hocico</span>
         <br />
         <label>Pelo: </label>
-        <span id="pelo"> muy largo, sedoso y de textura fina</span>
+        <span id="pelo">@Model.Pelo</span>
         <br />
         <label>Color: </label>
-        <span id="color">todos los colores</span>
+        <span id="color">@Model.Color</span>
     </section>
     <br class="clear" />
 

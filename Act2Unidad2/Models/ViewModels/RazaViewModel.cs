@@ -18,6 +18,11 @@
         public int AmistadDesconocidos { get; set; }
         public int AmistadPerros { get; set; }
         public int Cepillado { get; set; }
+        public string Patas { get; set; } = null!;
+        public string Cola { get; set; } = null!;
+        public string Hocico { get; set; } = null!;
+        public string Pelo { get; set; } = null!;
+        public string Color { get; set; } = null!;
 
     }
 }
