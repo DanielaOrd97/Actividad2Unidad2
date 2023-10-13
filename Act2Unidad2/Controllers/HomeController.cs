@@ -9,7 +9,6 @@ namespace Act2Unidad2.Controllers
 {
     public class HomeController : Controller
     {
-        //char[] letras;
         public IEnumerable<char> letras { get; set; } = null!;
         IndexViewModel vm = new();
 
