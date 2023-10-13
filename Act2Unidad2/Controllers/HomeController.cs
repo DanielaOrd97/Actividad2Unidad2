@@ -11,6 +11,7 @@ namespace Act2Unidad2.Controllers
     {
         IndexViewModel vm = new();
 
+
         public IActionResult Index()
         {
 
@@ -20,42 +21,48 @@ namespace Act2Unidad2.Controllers
 
             vm.Abecedario = datos.Select(x => x.Nombre.FirstOrDefault()).Distinct().ToList();
 
+
             vm.ListaRazas = datos.Select(x => new RazasModel
             {
                 IdRaza = (int)x.Id,
                 NombreRaza = x.Nombre,
             });
 
-          
+
             return View(vm);
 
         }
 
 
+
         [Route("/Home/Index/{letra}")]
         public IActionResult Index(char letra)
         {
-
             PerrosContext context = new();
 
             var datos = context.Razas.OrderBy(x => x.Nombre).ToList();
 
             vm.Abecedario = datos.Select(x => x.Nombre.FirstOrDefault()).Distinct().ToList();
 
-
             var datos1 = context.Razas.Where(x => x.Nombre.FirstOrDefault() == letra).ToList();
 
-            vm.ListaRazas = datos1.Select(x => new RazasModel
+            if (datos1 == null)
             {
-                NombreRaza = x.Nombre,
-                IdRaza = (int)x.Id
-            });
-
-
-            
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                vm.ListaRazas = datos1.Select(x => new RazasModel
+                {
+                    NombreRaza = x.Nombre,
+                    IdRaza = (int)x.Id
+                });
+            }
 
             return View(vm);
         }
+
+
 
         [Route("/Home/Detalles/{NombreRaza}")]
         public IActionResult Detalles(string NombreRaza)
@@ -130,7 +137,7 @@ namespace Act2Unidad2.Controllers
                 {
                     IdRaza = (int)x.Id,
                     NombreRaza = x.Nombre
-                })
+                }).OrderBy(x => x.NombreRaza).ToList()
             });
 
             return View(datos);
