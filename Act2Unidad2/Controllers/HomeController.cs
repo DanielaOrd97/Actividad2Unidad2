@@ -48,23 +48,21 @@ namespace Act2Unidad2.Controllers
         public IActionResult Index(char letra)
         {
            
-            PerrosContext context = new();
+            //PerrosContext context = new();
 
-            //var datos = context.Razas.Where(x => x.Nombre.ElementAt(0) == letra);
-            var datos = context.Razas.Where(x => x.Nombre.StartsWith(letra));
+            ////var datos = context.Razas.Where(x => x.Nombre.ElementAt(0) == letra);
+            //var datos = context.Razas.Where(x => x.Nombre.StartsWith(letra));
 
-            vm.ListaRazas = datos.Select(x => new RazasModel
-            {
-                IdRaza = (int)x.Id,
-                NombreRaza = x.Nombre
-            });
+            //vm.ListaRazas = datos.Select(x => new RazasModel
+            //{
+            //    IdRaza = (int)x.Id,
+            //    NombreRaza = x.Nombre
+            //});
 
-            //GenerarAbecedario();
-            //  letras.AddRange(vm.ListaRazas.Select(x => x.NombreRaza.First()).Distinct().ToList());
-            letras = vm.ListaRazas.Select(x => x.NombreRaza.FirstOrDefault()).ToList().Distinct();
-            vm.Abecedario = letras;
+            //letras = vm.ListaRazas.Select(x => x.NombreRaza.FirstOrDefault()).ToList().Distinct();
+            //vm.Abecedario = letras;
 
-            return View(vm);
+            return View();
         }
 
         //metodo para generar abecedario
@@ -148,20 +146,7 @@ namespace Act2Unidad2.Controllers
                     Color = datos.Caracteristicasfisicas.Color,
                 };
 
-                /////
-                ///
-                //int[] azar;
-                //void GenerarAzar()
-                //{
-
-                //    azar = new int[4];
-                //    Random r = new();
-
-                //    for (int i = 0; i < azar.Length; i++)
-                //    {
-                //        azar[i] = r.Next(51, 4502);
-                //    }
-                //}
+               
 
                 Random r = new();
                 var lista = context.Razas.ToList().OrderBy(x => r.Next()).Take(4);
