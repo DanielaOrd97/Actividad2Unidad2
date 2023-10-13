@@ -10,35 +10,25 @@ namespace Act2Unidad2.Controllers
     public class HomeController : Controller
     {
         //char[] letras;
-        public IEnumerable<char> letras { get; set; }
+        public IEnumerable<char> letras { get; set; } = null!;
         IndexViewModel vm = new();
-        
-
-
-        //  [Route("/Home/Index/{letra}")]
-
 
         public IActionResult Index()
         {
-            //GenerarAbecedario();
 
             PerrosContext context = new();
 
-            var datos = context.Razas.OrderBy(x => x.Nombre);
+            var datos = context.Razas.OrderBy(x => x.Nombre).ToList();
 
-            // vm.Abecedario = letras;
+            vm.Abecedario = datos.Select(x => x.Nombre.FirstOrDefault()).Distinct().ToList();
+
             vm.ListaRazas = datos.Select(x => new RazasModel
             {
                 IdRaza = (int)x.Id,
-                NombreRaza = x.Nombre
+                NombreRaza = x.Nombre,
             });
 
-            //////
-            //////GenerarAbecedario();
-
-            letras = vm.ListaRazas.Select(x => x.NombreRaza.FirstOrDefault()).ToList().Distinct();
-            vm.Abecedario = letras;
-
+          
             return View(vm);
 
         }
@@ -47,64 +37,27 @@ namespace Act2Unidad2.Controllers
         [Route("/Home/Index/{letra}")]
         public IActionResult Index(char letra)
         {
-           
-            //PerrosContext context = new();
 
-            ////var datos = context.Razas.Where(x => x.Nombre.ElementAt(0) == letra);
-            //var datos = context.Razas.Where(x => x.Nombre.StartsWith(letra));
+            PerrosContext context = new();
 
-            //vm.ListaRazas = datos.Select(x => new RazasModel
-            //{
-            //    IdRaza = (int)x.Id,
-            //    NombreRaza = x.Nombre
-            //});
+            var datos = context.Razas.OrderBy(x => x.Nombre).ToList();
 
-            //letras = vm.ListaRazas.Select(x => x.NombreRaza.FirstOrDefault()).ToList().Distinct();
-            //vm.Abecedario = letras;
+            vm.Abecedario = datos.Select(x => x.Nombre.FirstOrDefault()).Distinct().ToList();
 
-            return View();
+
+            var datos1 = context.Razas.Where(x => x.Nombre.FirstOrDefault() == letra).ToList();
+
+            vm.ListaRazas = datos1.Select(x => new RazasModel
+            {
+                NombreRaza = x.Nombre,
+                IdRaza = (int)x.Id
+            });
+
+
+            
+
+            return View(vm);
         }
-
-        //metodo para generar abecedario
-        //public void GenerarAbecedario()
-        //{
-
-        //    //for (char i = 'A'; i <= 'Z'; i++)
-        //    //{
-        //    //    letras.Add(i);
-        //    //    //letras[contador] = i;
-        //    //    //contador++;
-        //    //}
-
-        //    /////////////////////////
-
-        //    //letras.AddRange(vm.ListaRazas.Select(x => x.NombreRaza.ElementAt(0)).Distinct());
-        //    letras = vm.ListaRazas.Select(x => x.NombreRaza.FirstOrDefault()).Distinct();
-
-        //    vm.Abecedario = letras;
-        //}
-
-
-        //[Route("/Home/Index/{letra}")]
-        //public IActionResult Index(char letra)
-        //{
-        //    PerrosContext context = new();
-
-        //    var datos = context.Razas.Where(x => x.Nombre[0] == letra);
-
-        //    //vm.ListaRazas = datos.Select(x => new RazasModel
-        //    //{
-        //    //    IdRaza = (int)x.Id,
-        //    //    NombreRaza = x.Nombre
-        //    //});
-
-
-
-        //    return View(vm);
-        //}
-
-
-
 
         [Route("/Home/Detalles/{NombreRaza}")]
         public IActionResult Detalles(string NombreRaza)
