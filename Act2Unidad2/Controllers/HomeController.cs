@@ -140,6 +140,11 @@ namespace Act2Unidad2.Controllers
                 }).OrderBy(x => x.NombreRaza).ToList()
             });
 
+            if(datos == null)
+            {
+                return RedirectToAction("Index");
+            }
+
             return View(datos);
         }
 
