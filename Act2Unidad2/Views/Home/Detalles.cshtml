@@ -63,21 +63,13 @@
 
     <section class="otrosPerros">
 
-        <a href="raza.html">
-            <img src="imgs_perros/80_0.jpg" />
-            <h2>Golden Retriever</h2>
+        @foreach (var p in Model.ListaAzar)
+    {
+        <a href="~/Home/Detalles/@(p.Nombre.Replace(" ","-"))">
+            <img src="~/imgs_perros/@(p.Id)_0.jpg" />
+            <h2>@p.Nombre</h2>
         </a>
-        <a href="raza.html">
-            <img src="imgs_perros/128_0.jpg" />
-            <h2>Keeshond</h2>
-        </a>
-        <a href="raza.html">
-            <img src="imgs_perros/109_0.jpg" />
-            <h2>Collie Barbudo</h2>
-        </a>
-        <a href="raza.html">
-            <img src="imgs_perros/58_0.jpg" />
-            <h2>Galgo Italiano</h2>
-        </a>
+    }
+        
     </section>
 

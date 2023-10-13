@@ -23,14 +23,15 @@
         public string Hocico { get; set; } = null!;
         public string Pelo { get; set; } = null!;
         public string Color { get; set; } = null!;
+        public IEnumerable<AzarModel> ListaAzar = null!;
 
     }
 
-    //////public class AzarModel
-    //////{
-    //////    public int Id { get; set; }
-    //////    public string Nombre { get; set; } = null!;
+    public class AzarModel
+    {
+        public int Id { get; set; }
+        public string Nombre { get; set; } = null!;
 
-    //////}
+    }
 
 }

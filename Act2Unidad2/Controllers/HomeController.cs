@@ -2,6 +2,7 @@
 using Act2Unidad2.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using NuGet.Protocol;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Act2Unidad2.Controllers
@@ -9,111 +10,96 @@ namespace Act2Unidad2.Controllers
     public class HomeController : Controller
     {
         //char[] letras;
-        List<char> letras = new();
+        public IEnumerable<char> letras { get; set; }
         IndexViewModel vm = new();
+        
+
+
+        //  [Route("/Home/Index/{letra}")]
+
 
         public IActionResult Index()
         {
             //GenerarAbecedario();
 
-            //PerrosContext context = new();
-
-            //var datos = context.Razas.OrderBy(x => x.Nombre);
-
-            //IndexViewModel vm = new();
-
-            //vm.ListaRazas = datos.Select(x => new RazasModel
-            //{
-            //    IdRaza = (int)x.Id,
-            //    NombreRaza = x.Nombre
-            //});
-
-            //return View(vm);
-
-
-            ///////////////////
-            ///
-
-          //  GenerarAbecedario();
-
             PerrosContext context = new();
 
             var datos = context.Razas.OrderBy(x => x.Nombre);
 
-            //IndexViewModel vm = new()
-            //{
-            //    Abecedario = letras,
-            //    ListaRazas = datos.Select(x => new RazasModel
-            //    {
-            //        IdRaza = (int)x.Id,
-            //        NombreRaza = x.Nombre
-            //    })
-            //};
-
-           // vm.Abecedario = letras;
+            // vm.Abecedario = letras;
             vm.ListaRazas = datos.Select(x => new RazasModel
             {
                 IdRaza = (int)x.Id,
                 NombreRaza = x.Nombre
             });
 
+            //////
+            //////GenerarAbecedario();
 
-            // int longitud = vm.ListaRazas.Count();
-            // List<char> InicioL = new();
-
-            //letras.AddRange(vm.ListaRazas.Select(x => x.NombreRaza[0]).Distinct());
-
-            //vm.Abecedario = letras;
-
-            GenerarAbecedario();
-
-            return View(vm);
-        }
-
-
-
-        //metodo para generar abecedario
-        void GenerarAbecedario()
-        {
-
-            //for (char i = 'A'; i <= 'Z'; i++)
-            //{
-            //    letras.Add(i);
-            //    //letras[contador] = i;
-            //    //contador++;
-            //}
-            letras.AddRange(vm.ListaRazas.Select(x => x.NombreRaza[0]).Distinct());
-
+            letras = vm.ListaRazas.Select(x => x.NombreRaza.FirstOrDefault()).ToList().Distinct();
             vm.Abecedario = letras;
 
+            return View(vm);
 
         }
 
 
         [Route("/Home/Index/{letra}")]
+        public IActionResult Index(char letra)
+        {
+           
+            PerrosContext context = new();
+
+            //var datos = context.Razas.Where(x => x.Nombre.ElementAt(0) == letra);
+            var datos = context.Razas.Where(x => x.Nombre.StartsWith(letra));
+
+            vm.ListaRazas = datos.Select(x => new RazasModel
+            {
+                IdRaza = (int)x.Id,
+                NombreRaza = x.Nombre
+            });
+
+            //GenerarAbecedario();
+            //  letras.AddRange(vm.ListaRazas.Select(x => x.NombreRaza.First()).Distinct().ToList());
+            letras = vm.ListaRazas.Select(x => x.NombreRaza.FirstOrDefault()).ToList().Distinct();
+            vm.Abecedario = letras;
+
+            return View(vm);
+        }
+
+        //metodo para generar abecedario
+        //public void GenerarAbecedario()
+        //{
+
+        //    //for (char i = 'A'; i <= 'Z'; i++)
+        //    //{
+        //    //    letras.Add(i);
+        //    //    //letras[contador] = i;
+        //    //    //contador++;
+        //    //}
+
+        //    /////////////////////////
+
+        //    //letras.AddRange(vm.ListaRazas.Select(x => x.NombreRaza.ElementAt(0)).Distinct());
+        //    letras = vm.ListaRazas.Select(x => x.NombreRaza.FirstOrDefault()).Distinct();
+
+        //    vm.Abecedario = letras;
+        //}
+
+
+        //[Route("/Home/Index/{letra}")]
         //public IActionResult Index(char letra)
         //{
         //    PerrosContext context = new();
 
         //    var datos = context.Razas.Where(x => x.Nombre[0] == letra);
 
-        //    //IndexViewModel vm = new()
+        //    //vm.ListaRazas = datos.Select(x => new RazasModel
         //    //{
-        //    //    Abecedario = letras,
-        //    //    ListaRazas = datos.Select(x => new RazasModel 
-        //    //    {
-        //    //        IdRaza = (int)x.Id, 
-        //    //        NombreRaza = x.Nombre 
-        //    //    })
-        //    //};
+        //    //    IdRaza = (int)x.Id,
+        //    //    NombreRaza = x.Nombre
+        //    //});
 
-        //    vm.ListaRazas = datos.Select(x => new RazasModel
-        //    {
-        //        IdRaza = (int)x.Id,
-        //        NombreRaza = x.Nombre
-        //    });
-
-        //    GenerarAbecedario();
 
 
         //    return View(vm);
@@ -159,7 +145,7 @@ namespace Act2Unidad2.Controllers
                     Cola = datos.Caracteristicasfisicas.Cola,
                     Hocico = datos.Caracteristicasfisicas.Hocico,
                     Pelo = datos.Caracteristicasfisicas.Pelo,
-                    Color = datos.Caracteristicasfisicas.Color
+                    Color = datos.Caracteristicasfisicas.Color,
                 };
 
                 /////
@@ -167,7 +153,7 @@ namespace Act2Unidad2.Controllers
                 //int[] azar;
                 //void GenerarAzar()
                 //{
-                    
+
                 //    azar = new int[4];
                 //    Random r = new();
 
@@ -176,9 +162,16 @@ namespace Act2Unidad2.Controllers
                 //        azar[i] = r.Next(51, 4502);
                 //    }
                 //}
-                
-               
 
+                Random r = new();
+                var lista = context.Razas.ToList().OrderBy(x => r.Next()).Take(4);
+
+                vm.ListaAzar = lista.Select(x => new AzarModel
+                {
+                    Id = (int)x.Id,
+                    Nombre = x.Nombre
+                });
+                
                 return View(vm);
 
 
@@ -206,9 +199,6 @@ namespace Act2Unidad2.Controllers
 
             return View(datos);
         }
-
-
-        
 
     }
 }
